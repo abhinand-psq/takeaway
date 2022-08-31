@@ -1,0 +1,641 @@
+/*google fonts and other font settings*/
+
+h1 ,#takeaway{
+
+  font-family: 'Rubik Dirt', cursive;
+  font-size: 65px;
+}
+section3,#p{
+  font-family: 'Arimo', sans-serif;
+  position: relative;
+  top:-20px;
+}
+.section3,h1,p{
+  color: white;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+}
+/*adding 3d effect and shadow to all button in the website*/
+button{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+
+/*SECTION1*/
+/* navigation-wrap class in navbar css*/
+/*it lose background when poisition become fixed*/
+.navigation-wrap{
+   /* box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, 0.09);
+transition: all .15s ease-in-out 0s;*/
+}
+
+
+/*navbar-brand class of logo image in navbar*/
+
+.navbar-brand img{
+    width: 100px;
+    height: 90px;
+    box-sizing: border-box;
+
+}
+/*updating nav-item in navbar helps to change style of menu in top of window (eg=home,contact)*/
+.nav-item{
+    font-size: larger;
+    font-weight: 500;
+    font-weight: 800;
+    
+}
+.nav-link{
+  
+    color: red!important;
+}
+.nav-item a:hover{
+    color:red;
+}
+
+/*adding underline hover effect for menu bars*/
+.nav-item {
+    display: inline-block;
+    position: relative;
+    
+   
+  }
+  
+  .nav-item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:red;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .nav-item:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  /*adding a fake clicking effect for button in section1 to seperate we have to use,*/
+  .section1,.btn:active{
+    background-color: white !important;
+    color: brown !important;
+    
+  }
+  #btn0{
+    border-radius: 80%;
+  }
+
+  /*brief about company*/
+  .section0{
+    background-color: #6e3b21;
+  
+  }
+  /*motion of numbers*/
+  .numbers {
+    font-family: 'Arial', sans-serif;
+    font-size: 23px;
+    line-height: 1em;
+    text-align: center;
+    margin: 4px auto;
+    overflow: hidden;
+    color: black;
+    font-weight: 550;
+    padding-bottom: 30px;
+  }
+  .numbers__window {
+    display: inline-block;
+    overflow: hidden;
+    width: 0.5em;
+    height: 1em;
+  }
+  .numbers__window__digit {
+    font: inherit;
+    word-break: break-all;
+    display: block;
+    width: 0;
+    padding: 0 0.52em 0 0;
+    margin: 0 auto;
+    overflow: inherit;
+    animation: counting 0.4s steps(10) forwards infinite;
+  }
+  .numbers__window__digit::before {
+    content: attr(data-fake);
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  .numbers__window__digit--1 {
+    animation-iteration-count: 3;
+  }
+  .numbers__window__digit--2 {
+    animation-iteration-count: 6;
+  }
+  .numbers__window__digit--3 {
+    animation-iteration-count: 9;
+  }
+  .numbers__window__digit--4 {
+    animation-iteration-count: 12;
+  }
+  .numbers__window__digit--5 {
+    animation-iteration-count: 15;
+  }
+  
+  @keyframes counting {
+    100% {
+      transform: translate3d(0, -10em, 0);
+    }
+  }
+  /*section0 font color*/
+  .section0,h2{
+    color: white;
+    font-weight: 900;
+  }
+  /*home menu in section2 */
+
+  .section2{
+    background-image:url(White\ Cream\ and\ Brown\ Light\ Simple\ and\ Straightforward\ Food\ Ecommerce\ Business\ Meeting\ Visual\ Charts\ Presentation\ \(1\).png);
+    background-size: cover;
+    /*first is for top second for side*/
+    padding: 12em 0 2em;
+    /*padding: 12em 0 2em;*/
+    padding-bottom: 31em;
+    /*first is for side second for top*/
+    background-position: 1px 47em ;
+   
+  }
+  /*adding button but show in certain break point in responsive css*/
+  #btn1 {
+    display: none;
+    text-decoration: none;
+  }
+ 
+  /*making changes in section3 below section2*/
+  .section3{
+background-image: url(White\ Cream\ and\ Brown\ Light\ Simple\ and\ Straightforward\ Food\ Ecommerce\ Business\ Meeting\ Visual\ Charts\ Presentation\ \(2\).png);
+background-size: cover;
+    padding: 6em 0 2em;
+    padding-bottom: 6em;
+    /*first is for side second for top*/
+    background-position: 1px 42em ;
+  }
+ /*adding style background  of section4 of cards*/
+ .section4{
+ background-image: url(White\ Cream\ and\ Brown\ Light\ Simple\ and\ Straightforward\ Food\ Ecommerce\ Business\ Meeting\ Visual\ Charts\ Presentation\ \(3\).png);
+ background-size: cover;
+ padding: 2em 0 2em;
+ padding-bottom: 3em;
+ background-position: 12px 12px;
+
+border-bottom: #6e3b21 solid   24px ;
+ }
+ /*disapear the slide and appear it in a certain break point at responsive css*/
+ .section5{
+  display: none;
+ }
+ /* creating add different  style to card */
+ #card{
+  width: 18em !important; 
+ }
+ .container1{
+  position: relative;
+}
+
+.container1 #card{
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+  
+}
+
+.container1 #card:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#6e3b21;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+   
+}
+
+.container1 #card:hover:before{
+  clip-path: circle(300px at 80% -20%);
+  
+}
+
+.container1 #card:after{
+  /*used to add text inside card*/
+  /*content: 'TAKE';*/  
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255,255,25,0.05)
+}
+
+.container1 #card .imgBx{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 100%;
+  height: 220px;
+  /*height which the biriani move up*/
+  transition: 0.5s;
+}
+
+.container1 #card:hover .imgBx{
+  top: 0%;
+  transform: translateY(0%);
+  z-index:2 ;
+}
+
+.container1 #card .imgBx img{
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 350px;
+  
+}
+
+.container1 #card .contentBx{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container1 #card:hover .contentBx{
+  height: 210px;
+}
+
+.container1 #card .contentBx h2{
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0;
+  
+}
+
+.container1 #card .contentBx .size, .container1 #card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  
+}
+
+
+
+.container1 #card:hover .contentBx .color{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container1 #card .contentBx .size h3, .container1 #card .contentBx .color h3{
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  z-index:2 ;
+}
+
+
+
+
+
+
+.container1 #card .contentBx a{
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  margin-top: 0;
+  z-index:2 ;
+}
+
+.container1 #card:hover .contentBx a{
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+  z-index:2 ;
+  
+}
+.section6 #img2:hover,#img3:hover{
+  transform: scale(1.19,1.19);
+  z-index:2000 ;
+  transition: transform 330ms ease-in-out;
+}
+
+.section6{
+background-image: url(FIND\ TASTY\ CONTINENTAL\ \(8\).png);
+ padding-bottom: 55px;
+ padding-top: 20px;
+
+}
+.section6 #txt4{
+position: relative;
+bottom:-9px;
+}
+.section6 h2,img{
+  display: inline;
+}
+
+.section6 
+.section7{
+ background-color: #FAF6F1;
+ 
+ 
+
+}
+.section6 #imglogo{
+  display: block;
+}
+#img3,#img2,#img1{
+  position: relative;
+  bottom: -39px;
+
+}
+
+.section6 .pop2:hover,.pop1:hover,.pop3:hover {
+  transform: scale(1.19,1.19);
+  z-index:2 ;
+  transition: transform 330ms ease-in-out;
+  
+}
+.section6 img:hover{
+  transform: scale(1.19,1.19);
+  z-index:2 ;
+  transition: transform 330ms ease-in-out;
+  
+}
+.section8{
+  display: none;
+
+}
+.section8 .container {
+  margin: 70px auto;
+  border-radius: 15px;
+  display: flex;
+  box-shadow: 5px 5px 10px rgb(180, 170, 170), -5px -5px 10px rgb(179, 165, 165);
+  background-image: url(boxbur.png);
+  background-size: cover;
+  padding: 5em 5em;
+  padding-bottom: 14em;
+  background-color: #FAF6F1;
+  background-position: -5px -27px;
+}
+
+
+.section9{
+  display: none;
+
+}
+.section9 .container {
+  margin: 70px auto;
+  border-radius: 15px;
+  display: flex;
+  box-shadow: 5px 5px 10px rgb(180, 170, 170), -5px -5px 10px rgb(179, 165, 165);
+  background-image: url(boxbur.png);
+  background-size: cover;
+  padding: 5em 5em;
+  padding-bottom: 14em;
+  background-position: -5px -27px;
+}
+.section10{
+  display: none;
+
+}
+.section10 .container {
+  margin: 70px auto;
+  border-radius: 15px;
+  display: flex;
+  box-shadow: 5px 5px 10px rgb(180, 170, 170), -5px -5px 10px rgb(179, 165, 165);
+  background-image: url(boxbur.png);
+  background-size: cover;
+  padding: 5em 5em;
+  padding-bottom: 14em;
+  background-position: -5px -27px;
+}
+.section11{
+ background-image: url(Untitled\ design\ ng\(3\).png);
+ background-position: 20PX;
+
+  padding-top: 20px;
+
+ 
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #E1306C;
+
+}
+.wrapper .button:nth-child(3):hover .icon{
+
+  background: #333;
+}
+.wrapper .button:nth-child(4):hover .icon{
+background-color: #ff0000;
+  
+}
+
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
+}
+.section11 .box3{
+  padding: 10px;
+  
+}
+.section11 img:hover{
+ 
+}
+.section11 span{
+  font-size: xx-large;
+}
+/*section12*/
+.section12{
+  margin: 50px auto;
+  background-color:white;
+}
+.section12 h2{
+  text-align: center;
+  font-weight: bold;
+  color: #6e3b21;
+  padding-bottom: 12px;
+text-transform: capitalize;
+}
+.section12 h2::after{
+content: '';
+background: #6e3b21;
+display: block;
+height: 3px;
+width: 170px;
+margin: 20px auto 5px;
+}
+.section12 p{
+  text-align: center;
+}
+.section12 img:hover{
+  transform: scale(1.19,1.19);
+  z-index:2 ;
+  transition: transform 330ms ease-in-out;
+}
+.section12 h3:hover,blockquote:hover{
+  color: #6e3b21;
+  cursor:pointer ;
+  font-weight: bold;
+  transform: scale(1.111,1.111);
+  z-index:2 ;
+  transition: transform 330ms ease-in-out;
+  
+}
+.section12 blockquote{
+  text-align: center;
+
+}
+/*section13*/
+.section13{
+  background-color: white;
+  padding-top: 22px;
+  padding-bottom: 42px;
+}
+
+.section13 h3{
+  text-align: center;
+  color: #6e3b21;
+  font-weight: 700;
+}
+.section13 h4{
+  font-weight: 700;
+  color: brown;
+}
+.section13 p{
+  
+  color:black;
+}.section14{
+  width: 100%;
+}
+.section14 .form-control{
+  height: 2.4333rem;
+padding: 0 1.25rem;
+font-size: 1rem;
+font-weight: 600;
+width: 80%;
+background: transparent;
+border: solid brown 2px;
+color:gray;
+float: right;
+}
+.section15 p{
+  color: #111;
+  padding: 0;
+  margin:0.9999px;
+text-decoration: none;
+}
+.section15 a{
+  text-decoration: none;
+}

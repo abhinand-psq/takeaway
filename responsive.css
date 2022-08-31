@@ -1,0 +1,194 @@
+
+/*change background image position in */
+      @media(max-width:1430px){
+        .section2{
+            padding-bottom: 28em;
+            background-position: 1px 40em;
+           
+          }
+}
+/*display the button which is blocked*/
+@media(max-width:1400px){
+    
+   /*   #btn1{
+        display: inline;
+       position: relative;
+       top: 355px;
+       
+        
+       }*/
+
+       
+}
+/*change text color when break at 992*/
+@media(max-width:992px){
+  
+  .section3{
+    color: white !important;
+    background-image: none;
+background-color: #232323;
+    width: 100%;
+    height: 50%;
+    }
+ 
+    .section6{
+    
+      text-align: center;
+      
+      
+    }
+    .section6 ,.txt1{
+      margin-top: 1em;
+     
+    }
+    .section6 ,.txt2{
+      padding-bottom: 2em;
+    }
+   /*important*/
+    .section14 .container {
+     text-align: center;
+    }
+    .section14 .btn{
+      margin-top: 15px;
+      width: 40%;
+    }
+    .section14 .form-control{
+      height: 2.4333rem;
+    padding: 0 1.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    background: transparent;
+    border: solid brown 2px;
+    color:gray;
+    
+    }
+}
+@media(max-width:998px){
+  .section5{
+    display: inline;
+    width: 100%;
+  }
+  .section4,.box{
+    display: none;
+
+  }
+  .section8{
+    display: inline;
+    
+  }
+  .section9{
+    display: inline;
+    
+  }
+  .section10{
+    display: inline;
+    
+  }
+  .section7{
+    display:none ;
+  }
+  
+}
+@media(max-width:1200px){
+  .card{
+  width: 20rem;
+  height: 23em;
+  }
+  
+}
+@media (max-width:992px){
+  .section6{
+    background-image: url(Untitled\ design\ ng\(3\).png);
+  }
+}
+
+@media(max-width:772px){
+  .section8 .container {
+    margin: 70px auto;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 5px 5px 10px rgb(180, 170, 170), -5px -5px 10px rgb(179, 165, 165);
+    background-image: url(boxbur.png);
+    background-size: cover;
+    padding: 5em 5em;
+    padding-bottom: 14em;
+    background-position: -42px;
+  }
+  .section9 .container {
+    margin: 70px auto;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 5px 5px 10px rgb(180, 170, 170), -5px -5px 10px rgb(179, 165, 165);
+    background-image: url(boxbur.png);
+    background-size: cover;
+    padding: 5em 5em;
+    padding-bottom: 14em;
+    background-position: -42px;
+  }
+  .section10 .container {
+    margin: 70px auto;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 5px 5px 10px rgb(180, 170, 170), -5px -5px 10px rgb(179, 165, 165);
+    background-image: url(boxbur.png);
+    background-size: cover;
+    padding: 5em 5em;
+    padding-bottom: 14em;
+    background-position: -42px;
+  }
+}
+@media(max-width:378px){
+  .section8 .container {
+    margin: 70px auto;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 5px 5px 10px rgb(180, 170, 170), -5px -5px 10px rgb(179, 165, 165);
+    background-image: url(boxbur.png);
+    background-size: cover;
+    padding: 1em 5em;
+    padding-bottom: 14em;
+    background-position: -42px;
+  }
+  .section9 .container {
+    margin: 70px auto;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 5px 5px 10px rgb(180, 170, 170), -5px -5px 10px rgb(179, 165, 165);
+    background-image: url(boxbur.png);
+    background-size: cover;
+    padding: 1em 5em;
+    padding-bottom: 14em;
+    background-position: -42px;
+  }
+  .section10 .container {
+    margin: 70px auto;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 5px 5px 10px rgb(180, 170, 170), -5px -5px 10px rgb(179, 165, 165);
+    background-image: url(boxbur.png);
+    background-size: cover;
+    padding: 1em 5em;
+    padding-bottom: 14em;
+    background-position: -42px;
+  }
+}
+@media(max-width:325px){
+  .section8 h4{
+      line-height: 25px;
+  }
+  .section8 h2{
+      margin-left: 2rem;
+}
+}
+@media(max-width:582px){
+
+  .section15 .container{
+    text-align: center;
+
+  }
+  .section15{
+    
+  }
+
+}
